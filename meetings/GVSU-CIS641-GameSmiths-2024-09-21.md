@@ -4,22 +4,22 @@ Hold a team meeting at least once a week in some format.  Copy the following tem
 
 ## Meeting minutes template
 
-Team name:
+Team name: Game Smiths
 
-Members present:
+Members present: Quinton Gandall, Khoi Tran
 
-Date:
+Date: 9/21/24
 
-Time:
+Time: 10:30AM - 12:00PM
 
 Discussion points: 
 
-*
-*
-*
+* Proposal: timeline, challenges, functions
+* Project maps
+* Multiplayer integration
 
 Goals for next week (include responsibilities)
 
-*
-*
-*
+* At least 2 maps
+* Get player profile started
+* Intro screen
