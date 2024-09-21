@@ -6,7 +6,7 @@ Hold a team meeting at least once a week in some format.  Copy the following tem
 
 Team name: Game Smiths
 
-Members present: Quinton Gandall, Khoi Tran
+Members present: Quinton Randall, Khoi Tran
 
 Date: 9/21/24
 

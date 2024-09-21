@@ -2,7 +2,7 @@ Team name:
 
 Team members:
 
-Quinton Gandall, Khoi Tran
+Quinton Randall, Khoi Tran
 
 (In 2-4 paragraphs, describe your project concept)
 
