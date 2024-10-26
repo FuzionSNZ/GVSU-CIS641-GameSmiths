@@ -11,6 +11,7 @@ Discussion points:
 * Game Board Cells
 * Minigame
 * Visuals
+  
 Goals for next week (include responsibilities)
 * Add boargame (skybox/ background)
 * Add logic for board, and CPU
