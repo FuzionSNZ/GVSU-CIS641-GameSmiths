@@ -51,37 +51,47 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 
 # Non-Functional Requirements
 
-## 1. Player Registration and Lobby Creation
-1. The system shall ensure that all player names are stored locally and are unique to each game session.
-2. The lobby joining process shall be intuitive.
-3. The system shall support a minimum of 6 concurrent users without performance degradation.
-4. The player interface shall be intuitive and user-friendly to ensure ease of navigation for players of all ages.
-5. The server shall handle all 3 lobby clients seperately, without distupting other game logic. 
+### Player Registration and Lobby Creation  
+| 1  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| NFR1 | The system shall ensure that all player names are stored locally and are unique to each game session. |  
+| NFR2 | The lobby joining process shall be intuitive.                                               |  
+| NFR3 | The system shall support a minimum of 6 concurrent users without performance degradation.    |  
+| NFR4 | The player interface shall be intuitive and user-friendly to ensure ease of navigation for players of all ages. |  
+| NFR5 | The server shall handle all 3 lobby clients separately, without disrupting other game logic. |  
 
-## 2. Game Board Mechanics
-1. The game board shall load within 3 seconds to minimize wait time for players.
-2. The game shall maintain a consistent frame rate of at least 60 frames per second during gameplay to ensure smooth animations.
-3. All game mechanics shall be thoroughly tested to ensure there are no bugs or glitches that affect gameplay.
-4. The user interface shall be visually appealing and thematic, enhancing the overall gaming experience.
-5. The game shall be optimized to consume minimal system resources, ensuring smooth performance even on devices with lower hardware specifications.
+### Game Board Mechanics  
+| 2  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| NFR1 | The game board shall load within 3 seconds to minimize wait time for players.               |  
+| NFR2 | The game shall maintain a consistent frame rate of at least 60 frames per second during gameplay to ensure smooth animations. |  
+| NFR3 | All game mechanics shall be thoroughly tested to ensure there are no bugs or glitches that affect gameplay. |  
+| NFR4 | The user interface shall be visually appealing and thematic, enhancing the overall gaming experience. |  
+| NFR5 | The game shall be optimized to consume minimal system resources, ensuring smooth performance even on devices with lower hardware specifications. |  
 
-## 3. Mini-Game Integration
-1. Mini-games shall have a maximum load time of 2 seconds to keep players engaged.
-2. The mini-game selection process shall be random but balanced, ensuring fairness and variety in gameplay.
-3. The system shall analyze player progress, and acurrately determine players' scores/ awards.
-4. Mini-games shall be designed to be accessible for players with varying skill levels to ensure inclusivity.
-5. The system shall support the addition of new mini-games without requiring significant modifications to the existing codebase or gameplay mechanics.
-   
-## 4. Cell Actions
-1. The game shall handel all cell actions without effecting performance.
-2. Cell display's shall be intuitive to their action.
-3. Cell actions must happen within 3 seconds of players landing.
-4. Cells shall render within 1 second of the board game display.
-5. Cells path shall append to chosen path within 1 second of player choice.
+### Mini-Game Integration  
+| 3  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| NFR1 | Mini-games shall have a maximum load time of 2 seconds to keep players engaged.            |  
+| NFR2 | The mini-game selection process shall be random but balanced, ensuring fairness and variety in gameplay. |  
+| NFR3 | The system shall analyze player progress and accurately determine players' scores/awards.  |  
+| NFR4 | Mini-games shall be designed to be accessible for players with varying skill levels to ensure inclusivity. |  
+| NFR5 | The system shall support the addition of new mini-games without requiring significant modifications to the existing codebase or gameplay mechanics. |  
 
-## 5. Mini-Game Integration
-1. The game shall render all graphics and handle collisions smoothly at a frame rate of at least 5 FPS.
-2. The game shall support at least 2 players in multiplayer mode without performance degradation.
-3. Controls shall be intuitive and responsive, allowing players to navigate easily.
-4. Random generation algorithms shall produce fair and diverse results for wall placements and fruit spawning.
-5. The generated graphics (textures, patterns, and colors) shall maintain a visually appealing and consistent style.
+### Cell Actions  
+| 4  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| NFR1 | The game shall handle all cell actions without affecting performance.                      |  
+| NFR2 | Cell displays shall be intuitive to their action.                                           |  
+| NFR3 | Cell actions must happen within 3 seconds of players landing.                              |  
+| NFR4 | Cells shall render within 1 second of the board game display.                              |  
+| NFR5 | Cells' paths shall append to the chosen path within 1 second of the player’s choice.       |  
+
+### Snake Mini-Game Integration  
+| 5  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| NFR1 | The game shall render all graphics and handle collisions smoothly at a frame rate of at least 5 FPS. |  
+| NFR2 | The game shall support at least 2 players in multiplayer mode without performance degradation. |  
+| NFR3 | Controls shall be intuitive and responsive, allowing players to navigate easily.           |  
+| NFR4 | Random generation algorithms shall produce fair and diverse results for wall placements and fruit spawning. |  
+| NFR5 | The generated graphics (textures, patterns, and colors) shall maintain a visually appealing and consistent style. |  
