@@ -107,7 +107,8 @@ To ensure that it integrates with the current ecosystem(assuming that it is a ga
 ##	How will you ensure that it any discovered issues are resolved?
 To ensure that any discovered issues are resolved, we will have continued matintnence 
 # Tracability Links
-Dectiption of this section
+This section outlines the traceability links between the various game artifacts (use cases, class diagrams, activity diagrams, etc.) and their corresponding functional and non-functional requirements. Traceability ensures that each requirement is properly addressed throughout the design and development process. By mapping requirements to specific game components and actions, we can ensure that the "Overthrone" game meets its intended functionality, performance, and user experience expectations. This section serves as a reference to track the implementation of requirements and verify that all aspects of the system are accounted for and properly executed.
+
 ## Use Case Diagram Traceability
 
 | Artifact ID | Artifact Name           | Requirement ID |  
