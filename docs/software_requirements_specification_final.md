@@ -159,3 +159,30 @@ Dectiption of this section
 | classBoardRenderer   | FR10, NFR6            |  
 | classAnimationHandler| NFR25, FR10           |  
 | classRandomEvent     | FR12, NFR14           |  
+
+
+## Activity Diagram Traceability
+
+| Artifact ID        | Artifact Name              | Requirement ID        |
+| :-----------------: | :-------------------------: | :-------------------: |
+| activityPlayerInput | Handle Player Input         | FR1, FR5, NFR2        |
+| activityLobby       | Join Game Lobby             | FR1, NFR1, NFR7       |
+| activityRollDice    | Roll Dice                   | FR8, NFR18            |
+| activityMovePlayer  | Move Player                 | FR5, NFR16, NFR18     |
+| activitySelectPath  | Select Path                 | FR9, NFR20            |
+| activityMiniGame    | Start Mini-Game             | FR15, NFR11, NFR12    |
+| activitySpaceAction | Trigger Space Action        | FR16, NFR16, FR17     |
+| activityTurnChange  | Change Turn Sequence        | FR6, FR7, NFR10       |
+| activityUpdateScore | Update Player Score         | FR17, NFR18, NFR20    |
+| activityCPUPlayer   | Handle CPU Player Actions   | FR19, NFR22           |
+| activityGameStart   | Start Game Logic            | FR19, NFR19           |
+| activityEndGame     | End Game Logic              | FR10, NFR25           |
+| activityHandleEvent | Handle Game Events          | FR20, NFR16           |
+| activityRandomizer  | Randomize Game Elements     | FR12, NFR14           |
+| activityPathChoice  | Handle Path Choice          | FR9, NFR20            |
+| activityTriggerMiniGame | Trigger Mini-Game Based on Round | FR15, NFR13   |
+| activityHandlePlayerAction | Process Player Action | FR16, NFR18           |
+| activityGameSetup   | Setup Game Environment      | FR10, NFR6            |
+| activityRenderBoard | Render Game Board           | FR10, NFR6            |
+| activityDisplayGraphics | Display Game Graphics   | FR15, NFR25           |
+| activityNetworkSync | Sync Game State Across Clients | NFR10, NFR5       |
