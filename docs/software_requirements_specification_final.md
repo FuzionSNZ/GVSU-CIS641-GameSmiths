@@ -100,11 +100,11 @@ This section provides a detailed description of the software requirements for th
 | NFR25 | The generated graphics (textures, patterns, and colors) shall maintain a visually appealing and consistent style. |
 
 # Change management plan
-##	How will you train people to use it?
+## How will you train people to use it?
 To train users on how to use the game, we will present a video for those interested. This video will feature the startup sequence, up until the end sequence. Throughout the video, we will explain rules, setup, and navigation.
-#	How will you ensure it integrates within their ecosystem / software?
+##	How will you ensure it integrates within their ecosystem / software?
 To ensure that it integrates with the current ecosystem(assuming that it is a game publisher), 
-#	How will you ensure that it any discovered issues are resolved?
+##	How will you ensure that it any discovered issues are resolved?
 To ensure that any discovered issues are resolved, we will have continued matintnence 
 # Tracability Links
 Dectiption of this section
