@@ -1,7 +1,10 @@
 # Overview
-This document serves as a Software Requirements Specification (SRS) for the Overthrone board game. It details the key features of the game and outlines both functional and non-functional requirements to ensure the game functions as intended while meeting quality standards.
+This document outlines the Software Requirements Specification (SRS) for the "Overthrone" game. It serves to define the functional and non-functional requirements for the development of the game, including system behavior, performance expectations, user interactions, and technical constraints. This SRS will guide the development team in creating a robust, engaging, and scalable multiplayer board game experience.
 
-# Functional Requirements
+#Software Requirements
+This section provides a detailed description of the software requirements for the "Overthrone" game. It is divided into two main parts: functional requirements and non-functional requirements. Functional requirements define the expected behaviors and interactions within the game, such as player actions, game logic, and system responses. Non-functional requirements focus on performance, reliability, usability, and other system attributes that ensure the game operates efficiently and provides a high-quality user experience. Each requirement is linked to specific game features and processes to ensure traceability and clear implementation goals.
+
+## Functional Requirements
 
 ### Player Registration  
 | 1 | Requirement                                                                                  |  
@@ -49,7 +52,7 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 | FR25 | Snakes shall be able to move off one edge of the board and reappear on the opposite edge.   |  
 
 
-# Non-Functional Requirements
+## Non-Functional Requirements
 
 ### Player Registration and Lobby Creation  
 | 1  | Requirement                                                                                  |  
