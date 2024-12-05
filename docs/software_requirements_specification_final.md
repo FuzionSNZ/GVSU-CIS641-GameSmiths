@@ -4,7 +4,7 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 # Functional Requirements
 
 ## 1. Player Registration
-1. Players shall be able to join a game lobby to chat with other players.
+FR1. |Players shall be able to join a game lobby to chat with other players.|
 2. Players shall be able to select a unique player name to identify themselves in the game.
 3. Players shall be able to see the name of the other player's that join the same lobby.
 4. Players shall be able set their ready status in a public lobby.
