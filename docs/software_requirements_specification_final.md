@@ -100,6 +100,28 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 ##	How will you train people to use it?
 To train users on how to use the game, we will present a video for those interested. This video will feature the startup sequence, up until the end sequence. Throughout the video, we will explain rules, setup, and navigation.
 #	How will you ensure it integrates within their ecosystem / software?
-To ensure that it integrates
+To ensure that it integrates with the current ecosystem(assuming that it is a game publisher), 
 #	How will you ensure that it any discovered issues are resolved?
+To ensure that any discovered issues are resolved, we will have continued matintnence 
+# Tracability Links
+Dectiption of this section
+## Use Case Diagram Traceability
+| Artifact ID | Artifact Name         | Requirement ID |
+| :----------: | :--------------------: | :------------: |
+| UseCase1     | Roll Dice              | FR1            |
+| UseCase2     | Move Player            | FR2            |
+| UseCase3     | Land on "S" Space      | FR3            |
+| UseCase4     | Land on "N" Space      | FR4            |
+| UseCase5     | Land on "Z" Space      | FR5            |
+| UseCase6     | Land on "GP" Space     | FR6            |
+| UseCase7     | Land on "TP" Space     | FR7            |
+| UseCase8     | Land on "+X" Space     | FR8            |
+| UseCase9     | Land on "-X" Space     | FR9            |
+| UseCase10    | Start Random Minigame | FR10           |
+| UseCase11    | Choose Path            | FR11           |
+| UseCase12    | Switch Turn            | FR12           |
+| UseCase13    | CPU Player AI          | FR13           |
+| UseCase14    | Add/Remove Players     | FR14           |
+| UseCase15    | View Scoreboard        | FR15           |
+| UseCase16    | Start New Game         | FR16           |
 
