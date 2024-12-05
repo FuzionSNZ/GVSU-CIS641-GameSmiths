@@ -94,4 +94,11 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 | NFR2 | The game shall support at least 2 players in multiplayer mode without performance degradation. |  
 | NFR3 | Controls shall be intuitive and responsive, allowing players to navigate easily.           |  
 | NFR4 | Random generation algorithms shall produce fair and diverse results for wall placements and fruit spawning. |  
-| NFR5 | The generated graphics (textures, patterns, and colors) shall maintain a visually appealing and consistent style. |  
+| NFR5 | The generated graphics (textures, patterns, and colors) shall maintain a visually appealing and consistent style. |
+
+##	How will you train people to use it?
+#	To train users on how to use the game, we will present a video for those interested. This video will feature the startup sequence, up until the end sequence. Throughout the video, we will explain rules, setup, and navigation. 
+#	How will you ensure it integrates within their ecosystem / software?
+##	To ensure that it integrates 
+#	How will you ensure that it any discovered issues are resolved?
+
