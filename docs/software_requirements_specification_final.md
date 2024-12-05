@@ -130,4 +130,32 @@ Dectiption of this section
 | UseCase19    | Maintain Fairness in Mini-Game | FR15, NFR12  |  
 | UseCase20    | Track Player Scores      | FR10, NFR20    |  
 
+## Class Diagram Traceability
 
+| Artifact Name       | Requirement ID        |  
+| :------------------: | :-------------------: |  
+| classPlayer          | NFR3, FR5, FR1        |  
+| classGameBoard       | FR10, NFR6, NFR16     |  
+| classLobby           | FR1, NFR1, NFR7       |  
+| classDice            | FR8, NFR18            |  
+| classMiniGame        | FR15, NFR11, NFR12    |  
+| classSpace           | FR16, NFR16, FR17     |  
+| classTurnManager     | FR20, NFR16           |  
+| classCPUPlayer       | FR19, NFR22           |  
+| classScoreTracker    | FR17, NFR20, NFR18    |  
+| classGameSession     | FR19, NFR19           |  
+| classGraphics        | FR15, NFR25           |  
+| classPathChoice      | FR9, NFR20            |  
+| classGameEvents      | FR20, NFR16           |  
+| classLobbyManager    | FR1, NFR1, NFR7       |  
+| classRandomizer      | FR12, NFR14           |  
+| classActionSpace     | FR16, NFR16, FR17     |  
+| classPlayerProfile   | FR2, NFR3             |  
+| classMatchmaking     | FR1, NFR1, NFR7       |  
+| classPointModifier   | FR18, NFR18           |  
+| classMiniGameManager | FR15, NFR12, NFR13    |  
+| classNetworkHandler  | NFR10, NFR5           |  
+| classSoundManager    | NFR25, FR10           |  
+| classBoardRenderer   | FR10, NFR6            |  
+| classAnimationHandler| NFR25, FR10           |  
+| classRandomEvent     | FR12, NFR14           |  
