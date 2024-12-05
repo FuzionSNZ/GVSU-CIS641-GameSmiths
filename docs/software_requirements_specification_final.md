@@ -190,3 +190,10 @@ This section outlines the traceability links between the various game artifacts 
 | activityRenderBoard | Render Game Board           | FR10, NFR6            |
 | activityDisplayGraphics | Display Game Graphics   | FR15, NFR25           |
 | activityNetworkSync | Sync Game State Across Clients | NFR10, NFR5       |
+
+# Software Artifacts
+
+<Describe the purpose of this section>
+
+* [I am a link](to_some_file.pdf)
+
