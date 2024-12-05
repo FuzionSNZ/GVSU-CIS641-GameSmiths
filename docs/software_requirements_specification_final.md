@@ -3,40 +3,50 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 
 # Functional Requirements
 
-## 1. Player Registration
-1. Players shall be able to join a game lobby to chat with other players.
-2. Players shall be able to select a unique player name to identify themselves in the game.
-3. Players shall be able to see the name of the other player's that join the same lobby.
-4. Players shall be able set their ready status in a public lobby.
-5. Players shall be able to send messages in a public lobby.
+### Player Registration  
+| ID  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| FR1 | Players shall be able to join a game lobby to chat with other players.                       |  
+| FR2 | Players shall be able to select a unique player name to identify themselves in the game.     |  
+| FR3 | Players shall be able to see the name of the other players that join the same lobby.         |  
+| FR4 | Players shall be able to set their ready status in a public lobby.                           |  
+| FR5 | Players shall be able to send messages in a public lobby.                                    |  
 
-## 2. Game Board Mechanics
-1. The game shall display the main game board.
-2. Players shall be able to roll dice to determine movement across the game board.
-3. The game shall implement space-specific actions based on the type of space landed on, including points gain/loss and mini-game triggers.
-4. The game shall handle player turns in a sequential manner, ensuring that players cannot take actions out of order.
-5. The game shall display turn_count, and all player data.
+### Game Board Mechanics  
+| ID  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| FR6 | The game shall display the main game board.                                                  |  
+| FR7 | Players shall be able to roll dice to determine movement across the game board.              |  
+| FR8 | The game shall implement space-specific actions based on the type of space landed on, including points gain/loss and mini-game triggers. |  
+| FR9 | The game shall handle player turns in a sequential manner, ensuring that players cannot take actions out of order. |  
+| FR10 | The game shall display turn count and all player data.                                      |  
 
-## 3. Mini-Game Integration
-1. The game shall randomly select a mini-game for players to participate in at the end of each round.
-2. Players shall be able to compete in mini-games to earn bonus points based on their performance.
-3. The game shall track and display the player's score for mini-game results after each round.
-4. Players shall have access to a variety of mini-games that test different skills and strategies.
-5. The game shallensure that the mini-games selected at the end of each round are unique and non-repetitive within a session, providing variety to the players.
-   
-## 4. Cell Actions
-1. The game shall add x points to a player's score if they land on a positive integer cell.
-2. The game shall subtract x points to a player's score if they land on a positive integer cell.
-3. The game shall set all player's points to 0 if they land on a "N" cell.
-4. The game shall prompt the player to choose a path if they land on a choose path block.
-5. The game shall increment the turn count by 1 after the final player lands on a cell.
-   
-## 5. Snake Minigame 
-1. The game shall draw all graphics within the game, including snakes, walls, and randomly generated textures and patterns.
-2. Each game session shall generate walls with random locations and textures.
-3.  Three types of fruits (orange, apple, pineapple) must shall at random locations with random selection in each game.
-4. Snakes shall grow longer after eating fruits, and when a snake collides with another, the cut-off section of the shorter snake must be added to the longer one.
-5. Snakes shall be able to move off one edge of the board and reappear on the opposite edge.
+### Mini-Game Integration  
+| ID  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| FR11 | The game shall randomly select a mini-game for players to participate in at the end of each round. |  
+| FR12 | Players shall be able to compete in mini-games to earn bonus points based on their performance. |  
+| FR13 | The game shall track and display the player's score for mini-game results after each round. |  
+| FR14 | Players shall have access to a variety of mini-games that test different skills and strategies. |  
+| FR15 | The game shall ensure that the mini-games selected at the end of each round are unique and non-repetitive within a session, providing variety to the players. |  
+
+### Cell Actions  
+| ID  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| FR16 | The game shall add x points to a player's score if they land on a positive integer cell.    |  
+| FR17 | The game shall subtract x points from a player's score if they land on a negative integer cell. |  
+| FR18 | The game shall set all players' points to 0 if they land on an "N" cell.                    |  
+| FR19 | The game shall prompt the player to choose a path if they land on a choose-path block.      |  
+| FR20 | The game shall increment the turn count by 1 after the final player lands on a cell.        |  
+
+### Snake Minigame  
+| ID  | Requirement                                                                                  |  
+| :--:| :-------------------------------------------------------------------------------------------:|  
+| FR21 | The game shall draw all graphics within the game, including snakes, walls, and randomly generated textures and patterns. |  
+| FR22 | Each game session shall generate walls with random locations and textures.                  |  
+| FR23 | Three types of fruits (orange, apple, pineapple) shall spawn at random locations with random selection in each game. |  
+| FR24 | Snakes shall grow longer after eating fruits, and when a snake collides with another, the cut-off section of the shorter snake must be added to the longer one. |  
+| FR25 | Snakes shall be able to move off one edge of the board and reappear on the opposite edge.   |  
 
 
 # Non-Functional Requirements
