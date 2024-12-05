@@ -4,7 +4,7 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 # Functional Requirements
 
 ### Player Registration  
-| ID  | Requirement                                                                                  |  
+| 1 | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
 | FR1 | Players shall be able to join a game lobby to chat with other players.                       |  
 | FR2 | Players shall be able to select a unique player name to identify themselves in the game.     |  
@@ -13,7 +13,7 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 | FR5 | Players shall be able to send messages in a public lobby.                                    |  
 
 ### Game Board Mechanics  
-| ID  | Requirement                                                                                  |  
+| 2 | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
 | FR1 | The game shall display the main game board.                                                  |  
 | FR2 | Players shall be able to roll dice to determine movement across the game board.              |  
@@ -22,7 +22,7 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 | FR5 | The game shall display turn count and all player data.                                      |  
 
 ### Mini-Game Integration  
-| ID  | Requirement                                                                                  |  
+| 3 | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
 | FR1 | The game shall randomly select a mini-game for players to participate in at the end of each round. |  
 | FR2 | Players shall be able to compete in mini-games to earn bonus points based on their performance. |  
@@ -31,7 +31,7 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 | FR5 | The game shall ensure that the mini-games selected at the end of each round are unique and non-repetitive within a session, providing variety to the players. |  
 
 ### Cell Actions  
-| ID  | Requirement                                                                                  |  
+| 4  | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
 | FR1 | The game shall add x points to a player's score if they land on a positive integer cell.    |  
 | FR2 | The game shall subtract x points from a player's score if they land on a negative integer cell. |  
@@ -40,7 +40,7 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 | FR5 | The game shall increment the turn count by 1 after the final player lands on a cell.        |  
 
 ### Snake Minigame  
-| ID  | Requirement                                                                                  |  
+| 5  | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
 | FR21 | The game shall draw all graphics within the game, including snakes, walls, and randomly generated textures and patterns. |  
 | FR2 | Each game session shall generate walls with random locations and textures.                  |  
