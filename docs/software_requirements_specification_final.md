@@ -15,38 +15,38 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 ### Game Board Mechanics  
 | ID  | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
-| FR6 | The game shall display the main game board.                                                  |  
-| FR7 | Players shall be able to roll dice to determine movement across the game board.              |  
-| FR8 | The game shall implement space-specific actions based on the type of space landed on, including points gain/loss and mini-game triggers. |  
-| FR9 | The game shall handle player turns in a sequential manner, ensuring that players cannot take actions out of order. |  
-| FR10 | The game shall display turn count and all player data.                                      |  
+| FR1 | The game shall display the main game board.                                                  |  
+| FR2 | Players shall be able to roll dice to determine movement across the game board.              |  
+| FR3 | The game shall implement space-specific actions based on the type of space landed on, including points gain/loss and mini-game triggers. |  
+| FR4 | The game shall handle player turns in a sequential manner, ensuring that players cannot take actions out of order. |  
+| FR5 | The game shall display turn count and all player data.                                      |  
 
 ### Mini-Game Integration  
 | ID  | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
-| FR11 | The game shall randomly select a mini-game for players to participate in at the end of each round. |  
-| FR12 | Players shall be able to compete in mini-games to earn bonus points based on their performance. |  
-| FR13 | The game shall track and display the player's score for mini-game results after each round. |  
-| FR14 | Players shall have access to a variety of mini-games that test different skills and strategies. |  
-| FR15 | The game shall ensure that the mini-games selected at the end of each round are unique and non-repetitive within a session, providing variety to the players. |  
+| FR1 | The game shall randomly select a mini-game for players to participate in at the end of each round. |  
+| FR2 | Players shall be able to compete in mini-games to earn bonus points based on their performance. |  
+| FR3 | The game shall track and display the player's score for mini-game results after each round. |  
+| FR4 | Players shall have access to a variety of mini-games that test different skills and strategies. |  
+| FR5 | The game shall ensure that the mini-games selected at the end of each round are unique and non-repetitive within a session, providing variety to the players. |  
 
 ### Cell Actions  
 | ID  | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
-| FR16 | The game shall add x points to a player's score if they land on a positive integer cell.    |  
-| FR17 | The game shall subtract x points from a player's score if they land on a negative integer cell. |  
-| FR18 | The game shall set all players' points to 0 if they land on an "N" cell.                    |  
-| FR19 | The game shall prompt the player to choose a path if they land on a choose-path block.      |  
-| FR20 | The game shall increment the turn count by 1 after the final player lands on a cell.        |  
+| FR1 | The game shall add x points to a player's score if they land on a positive integer cell.    |  
+| FR2 | The game shall subtract x points from a player's score if they land on a negative integer cell. |  
+| FR3 | The game shall set all players' points to 0 if they land on an "N" cell.                    |  
+| FR4 | The game shall prompt the player to choose a path if they land on a choose-path block.      |  
+| FR5 | The game shall increment the turn count by 1 after the final player lands on a cell.        |  
 
 ### Snake Minigame  
 | ID  | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
 | FR21 | The game shall draw all graphics within the game, including snakes, walls, and randomly generated textures and patterns. |  
-| FR22 | Each game session shall generate walls with random locations and textures.                  |  
-| FR23 | Three types of fruits (orange, apple, pineapple) shall spawn at random locations with random selection in each game. |  
-| FR24 | Snakes shall grow longer after eating fruits, and when a snake collides with another, the cut-off section of the shorter snake must be added to the longer one. |  
-| FR25 | Snakes shall be able to move off one edge of the board and reappear on the opposite edge.   |  
+| FR2 | Each game session shall generate walls with random locations and textures.                  |  
+| FR3 | Three types of fruits (orange, apple, pineapple) shall spawn at random locations with random selection in each game. |  
+| FR4 | Snakes shall grow longer after eating fruits, and when a snake collides with another, the cut-off section of the shorter snake must be added to the longer one. |  
+| FR5 | Snakes shall be able to move off one edge of the board and reappear on the opposite edge.   |  
 
 
 # Non-Functional Requirements
