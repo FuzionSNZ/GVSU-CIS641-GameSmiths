@@ -195,5 +195,5 @@ This section outlines the traceability links between the various game artifacts 
 
 <Describe the purpose of this section>
 
-* [I am a link]([[[artifacts](https://github.com/FuzionSNZ/GVSU-CIS641-GameSmiths/tree/3ff4ef3ee32c53b6d14deeb694213c3aec8c36fc/artifacts)](https://github.com/FuzionSNZ/GVSU-CIS641-GameSmiths/tree/main/artifacts)](https://github.com/FuzionSNZ/GVSU-CIS641-GameSmiths/tree/main/artifacts))
+* [I am a link](https://github.com/FuzionSNZ/GVSU-CIS641-GameSmiths/tree/main/artifacts)
 
