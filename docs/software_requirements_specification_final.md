@@ -106,22 +106,28 @@ To ensure that any discovered issues are resolved, we will have continued matint
 # Tracability Links
 Dectiption of this section
 ## Use Case Diagram Traceability
-| Artifact ID | Artifact Name         | Requirement ID |
-| :----------: | :--------------------: | :------------: |
-| UseCase1     | Roll Dice              | FR1            |
-| UseCase2     | Move Player            | FR2            |
-| UseCase3     | Land on "S" Space      | FR3            |
-| UseCase4     | Land on "N" Space      | FR4            |
-| UseCase5     | Land on "Z" Space      | FR5            |
-| UseCase6     | Land on "GP" Space     | FR6            |
-| UseCase7     | Land on "TP" Space     | FR7            |
-| UseCase8     | Land on "+X" Space     | FR8            |
-| UseCase9     | Land on "-X" Space     | FR9            |
-| UseCase10    | Start Random Minigame | FR10           |
-| UseCase11    | Choose Path            | FR11           |
-| UseCase12    | Switch Turn            | FR12           |
-| UseCase13    | CPU Player AI          | FR13           |
-| UseCase14    | Add/Remove Players     | FR14           |
-| UseCase15    | View Scoreboard        | FR15           |
-| UseCase16    | Start New Game         | FR16           |
+
+| Artifact ID | Artifact Name           | Requirement ID |  
+| :----------: | :----------------------: | :------------: |  
+| UseCase1     | Move Player              | FR5, NFR16     |  
+| UseCase2     | Join Lobby               | FR1, NFR1      |  
+| UseCase3     | Roll Dice                | FR8, NFR18     |  
+| UseCase4     | Select Path              | FR9, NFR20     |  
+| UseCase5     | Trigger Mini-Game        | FR15, NFR15    |  
+| UseCase6     | Interact with Space      | FR16, NFR16    |  
+| UseCase7     | Add/Subtract Points      | FR17, FR18, NFR18 |  
+| UseCase8     | Trigger Game Logic       | FR19, FR20, NFR19 |  
+| UseCase9     | Add/Remove Player Profile| FR2, NFR3      |  
+| UseCase10    | Load Game Board          | FR10, NFR6     |  
+| UseCase11    | Handle Game Events       | FR20, NFR16    |  
+| UseCase12    | Switch Between Players   | FR6, NFR7      |  
+| UseCase13    | Randomize Game Board     | FR12, NFR14    |  
+| UseCase14    | Handle CPU Player        | FR19, NFR22    |  
+| UseCase15    | Track Player Progress    | FR15, NFR13    |  
+| UseCase16    | Start Mini-Game          | FR16, NFR11    |  
+| UseCase17    | Display Graphics         | FR15, NFR25    |  
+| UseCase18    | Ensure Smooth Gameplay   | FR10, NFR10    |  
+| UseCase19    | Maintain Fairness in Mini-Game | FR15, NFR12  |  
+| UseCase20    | Track Player Scores      | FR10, NFR20    |  
+
 
