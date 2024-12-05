@@ -69,7 +69,7 @@ This document serves as a Software Requirements Specification (SRS) for the Over
 4. Cells shall render within 1 second of the board game display.
 5. Cells path shall append to chosen path within 1 second of player choice.
 
-## 4. Mini-Game Integration
+## 5. Mini-Game Integration
 1. The game shall render all graphics and handle collisions smoothly at a frame rate of at least 5 FPS.
 2. The game shall support at least 2 players in multiplayer mode without performance degradation.
 3. Controls shall be intuitive and responsive, allowing players to navigate easily.
