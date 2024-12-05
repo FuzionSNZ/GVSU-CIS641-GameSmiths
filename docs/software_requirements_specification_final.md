@@ -195,5 +195,5 @@ This section outlines the traceability links between the various game artifacts 
 
 <Describe the purpose of this section>
 
-* [I am a link](to_some_file.pdf)
+* [I am a link](artifacts)
 
