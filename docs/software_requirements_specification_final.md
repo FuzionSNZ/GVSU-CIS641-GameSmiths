@@ -67,7 +67,7 @@ This section provides a detailed description of the software requirements for th
 | 2  | Requirement                                                                                  |  
 | :--:| :-------------------------------------------------------------------------------------------:|  
 | NFR6 | The game board shall load within 3 seconds to minimize wait time for players.               |  
-| NFR7 | The game shall maintain a consistent frame rate of at least 60 frames per second during gameplay to ensure smooth animations. |  
+| NFR7 | The game shall maintain a consistent frame rate of at least 30 frames per second during gameplay to ensure smooth animations. |  
 | NFR8 | All game mechanics shall be thoroughly tested to ensure there are no bugs or glitches that affect gameplay. |  
 | NFR9 | The user interface shall be visually appealing and thematic, enhancing the overall gaming experience. |  
 | NFR10 | The game shall be optimized to consume minimal system resources, ensuring smooth performance even on devices with lower hardware specifications. |  
@@ -113,7 +113,7 @@ This section outlines the traceability links between the various game artifacts 
 
 | Artifact ID | Artifact Name           | Requirement ID |  
 | :----------: | :----------------------: | :------------: |  
-| UseCase1     | Move Player              | FR5, NFR16     |  
+| UseCase1     | Move Player              | FR7, NFR7      |  
 | UseCase2     | Join Lobby               | FR1, NFR1      |  
 | UseCase3     | Roll Dice                | FR8, NFR18     |  
 | UseCase4     | Select Path              | FR9, NFR20     |  
