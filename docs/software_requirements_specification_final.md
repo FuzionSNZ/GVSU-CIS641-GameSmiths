@@ -115,54 +115,54 @@ This section outlines the traceability links between the various game artifacts 
 | :----------: | :----------------------: | :------------: |  
 | UseCase1     | Move Player              | FR7, NFR7      |  
 | UseCase2     | Join Lobby               | FR1, NFR1      |  
-| UseCase3     | Roll Dice                | FR8, NFR18     |  
-| UseCase4     | Select Path              | FR9, NFR20     |  
-| UseCase5     | Trigger Mini-Game        | FR15, NFR15    |  
-| UseCase6     | Interact with Space      | FR16, NFR16    |  
-| UseCase7     | Add/Subtract Points      | FR17, FR18, NFR18 |  
+| UseCase3     | Roll Dice                | FR7, NFR18     |  
+| UseCase4     | Select Path              | FR19, NFR20    |  
+| UseCase5     | Trigger Mini-Game        | FR11, FR15, NFR15    |  
+| UseCase6     | Interact with Space      | FR8, FR16, NFR16    |  
+| UseCase7     | Add/Subtract Points      | FR16, FR17, FR18, NFR18 |  
 | UseCase8     | Trigger Game Logic       | FR19, FR20, NFR19 |  
-| UseCase9     | Add/Remove Player Profile| FR2, NFR3      |  
-| UseCase10    | Load Game Board          | FR10, NFR6     |  
-| UseCase11    | Handle Game Events       | FR20, NFR16    |  
-| UseCase12    | Switch Between Players   | FR6, NFR7      |  
+| UseCase9     | Add/Remove Player Profile| FR2, FR3, NFR3      |  
+| UseCase10    | Load Game Board          | FR6, FR10, NFR6     |  
+| UseCase11    | Handle Game Events       | FR10, FR20, NFR16   |  
+| UseCase12    | Switch Between Players   | FR9, FR6, NFR7      |  
 | UseCase13    | Randomize Game Board     | FR12, NFR14    |  
 | UseCase14    | Handle CPU Player        | FR19, NFR22    |  
-| UseCase15    | Track Player Progress    | FR15, NFR13    |  
-| UseCase16    | Start Mini-Game          | FR16, NFR11    |  
-| UseCase17    | Display Graphics         | FR15, NFR25    |  
-| UseCase18    | Ensure Smooth Gameplay   | FR10, NFR10    |  
-| UseCase19    | Maintain Fairness in Mini-Game | FR15, NFR12  |  
-| UseCase20    | Track Player Scores      | FR10, NFR20    |  
+| UseCase15    | Track Player Progress    | FR13, FR15, NFR13   |  
+| UseCase16    | Start Mini-Game          | FR11, FR15, NFR11    |  
+| UseCase17    | Display Graphics         | FR21, NFR25    |  
+| UseCase18    | Ensure Smooth Gameplay   | FR6, FR10, NFR10    |  
+| UseCase19    | Maintain Fairness in Mini-Game | FR12, FR15, NFR12  |  
+| UseCase20    | Track Player Scores      | FR13, FR10, NFR20    |  
 
 ## Class Diagram Traceability
 
-| Artifact Name       | Requirement ID        |  
+| Artifact Name        | Requirement ID        |  
 | :------------------: | :-------------------: |  
-| classPlayer          | NFR3, FR5, FR1        |  
-| classGameBoard       | FR10, NFR6, NFR16     |  
-| classLobby           | FR1, NFR1, NFR7       |  
-| classDice            | FR8, NFR18            |  
-| classMiniGame        | FR15, NFR11, NFR12    |  
-| classSpace           | FR16, NFR16, FR17     |  
-| classTurnManager     | FR20, NFR16           |  
+| classPlayer          | FR2, NFR3             |  
+| classGameBoard       | FR6, FR10, NFR6, NFR16|  
+| classLobby           | FR1, FR3, NFR1        |  
+| classDice            | FR7, NFR18            |  
+| classMiniGame        | FR11, FR15, NFR11, NFR12|  
+| classSpace           | FR8, FR16, FR17, NFR16|  
+| classTurnManager     | FR9, FR20, NFR16      |  
 | classCPUPlayer       | FR19, NFR22           |  
-| classScoreTracker    | FR17, NFR20, NFR18    |  
-| classGameSession     | FR19, NFR19           |  
-| classGraphics        | FR15, NFR25           |  
-| classPathChoice      | FR9, NFR20            |  
-| classGameEvents      | FR20, NFR16           |  
-| classLobbyManager    | FR1, NFR1, NFR7       |  
-| classRandomizer      | FR12, NFR14           |  
-| classActionSpace     | FR16, NFR16, FR17     |  
-| classPlayerProfile   | FR2, NFR3             |  
-| classMatchmaking     | FR1, NFR1, NFR7       |  
-| classPointModifier   | FR18, NFR18           |  
-| classMiniGameManager | FR15, NFR12, NFR13    |  
-| classNetworkHandler  | NFR10, NFR5           |  
-| classSoundManager    | NFR25, FR10           |  
-| classBoardRenderer   | FR10, NFR6            |  
-| classAnimationHandler| NFR25, FR10           |  
-| classRandomEvent     | FR12, NFR14           |  
+| classScoreTracker    | FR13, FR17, NFR13, NFR18, NFR20|  
+| classGameSession     | FR19, FR20, NFR19     |  
+| classGraphics        | 	FR21, NFR25          |  
+| classPathChoice      | FR19, NFR20           |  
+| classGameEvents      | FR10, FR20, NFR16     |  
+| classLobbyManager    | FR1, FR3, NFR1        |  
+| classRandomizer      | FR12, FR14, NFR14     |  
+| classActionSpace     | FR8, FR16, FR17, NFR16|  
+| classPlayerProfile   | FR2, FR3, NFR3        |  
+| classMatchmaking     | FR1, FR3, NFR1        |  
+| classPointModifier   | FR16, FR17, FR18, NFR18|  
+| classMiniGameManager | FR11, FR15, FR12, NFR12, NFR13|  
+| classNetworkHandler  | NFR5, NFR10           |  
+| classSoundManager    | NFR25, FR15           |  
+| classBoardRenderer   | FR6, FR10, NFR6       |  
+| classAnimationHandler| FR21, NFR25           |  
+| classRandomEvent     | FR12, FR14, NFR14     |  
 
 
 ## Activity Diagram Traceability
@@ -173,7 +173,7 @@ This section outlines the traceability links between the various game artifacts 
 | activityLobby       | Join Game Lobby             | FR1, NFR1, NFR7       |
 | activityRollDice    | Roll Dice                   | FR8, NFR18            |
 | activityMovePlayer  | Move Player                 | FR5, NFR16, NFR18     |
-| activitySelectPath  | Select Path                 | FR9, NFR20            |
+| activitySelectPath  | Select Path                 | FR19, NFR20           |
 | activityMiniGame    | Start Mini-Game             | FR15, NFR11, NFR12    |
 | activitySpaceAction | Trigger Space Action        | FR16, NFR16, FR17     |
 | activityTurnChange  | Change Turn Sequence        | FR6, FR7, NFR10       |
@@ -184,12 +184,12 @@ This section outlines the traceability links between the various game artifacts 
 | activityHandleEvent | Handle Game Events          | FR20, NFR16           |
 | activityRandomizer  | Randomize Game Elements     | FR12, NFR14           |
 | activityPathChoice  | Handle Path Choice          | FR9, NFR20            |
-| activityTriggerMiniGame | Trigger Mini-Game Based on Round | FR15, NFR13   |
-| activityHandlePlayerAction | Process Player Action | FR16, NFR18           |
+| activityTriggerMiniGame | Trigger Mini-Game Based on Round | FR15, NFR13  |
+| activityHandlePlayerAction | Process Player Action | FR16, NFR18          |
 | activityGameSetup   | Setup Game Environment      | FR10, NFR6            |
 | activityRenderBoard | Render Game Board           | FR10, NFR6            |
 | activityDisplayGraphics | Display Game Graphics   | FR15, NFR25           |
-| activityNetworkSync | Sync Game State Across Clients | NFR10, NFR5       |
+| activityNetworkSync | Sync Game State Across Clients | NFR10, NFR5        |
 
 # Software Artifacts
 
