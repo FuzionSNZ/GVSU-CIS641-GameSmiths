@@ -17,3 +17,10 @@
   * Controls - adjust master and music volume
 * Quit 
   * Closes Game
+# Want to run seperately(solo, or lan)?
+* Main Board Game
+  * Run GameBoard1.py
+* Snake Mini Game
+  * Run main.py in folder (MiniGameSnake) 
+* Frog Mini Game
+  * Run main.py in folder (MiniGameFrog) 
