@@ -12,6 +12,7 @@
 * Play
   * Enter your desired name in given prompt
   * Click the lobby you wish to join
+   * If all(2), players are in the lobby, press "R" to ready up  
 * Settings
   * Controls - adjust master and music volume
 * Quit 
