@@ -97,31 +97,191 @@ def subtract_3_points(player_index):
 
 
 def give_1_point(player_index):
-    pass
+    global player_scores
+
+    other_players = [
+        (i, f"Player {i + 1}" if i < 2 else f"AI Player {i - 1}")
+        for i in range(len(player_scores))
+        if i != player_index
+    ]
+
+    if player_index >= 2:
+        chosen_player = random.choice(other_players)[0]
+    else:
+        main_text_position = (1300, 200)
+        option_positions = [(1300, 250 + i * 50) for i in range(len(other_players))]
+        text_color = Black
+        text_size = 36
+
+        prompt_displayed = True
+        chosen_player = None
+
+        while prompt_displayed:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    exit()
+
+                if event.type == pygame.KEYDOWN:
+                    if pygame.K_1 <= event.key <= pygame.K_1 + len(other_players) - 1:
+                        chosen_player = other_players[event.key - pygame.K_1][0]
+                        prompt_displayed = False
+
+            font = pygame.font.Font(None, text_size)
+            main_text = font.render("Choose a player to give 1 of your points to:", True, text_color)
+            display.blit(main_text, main_text_position)
+
+            for i, (_, name) in enumerate(other_players):
+                option_text = font.render(f"{i + 1} ({name})", True, text_color)
+                display.blit(option_text, option_positions[i])
+            pygame.display.update()
+
+    if chosen_player is not None:
+        player_scores[player_index] -= 1
+        player_scores[chosen_player] += 1
 
 
 def give_2_points(player_index):
-    pass
+    global player_scores
+
+    other_players = [
+        (i, f"Player {i + 1}" if i < 2 else f"AI Player {i - 1}")
+        for i in range(len(player_scores))
+        if i != player_index
+    ]
+
+    if player_index >= 2:
+        chosen_player = random.choice(other_players)[0]
+    else:
+        main_text_position = (1300, 200)
+        option_positions = [(1300, 250 + i * 50) for i in range(len(other_players))]
+        text_color = Black
+        text_size = 36
+
+        prompt_displayed = True
+        chosen_player = None
+
+        while prompt_displayed:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    exit()
+
+                if event.type == pygame.KEYDOWN:
+                    if pygame.K_1 <= event.key <= pygame.K_1 + len(other_players) - 1:
+                        chosen_player = other_players[event.key - pygame.K_1][0]
+                        prompt_displayed = False
+
+            font = pygame.font.Font(None, text_size)
+            main_text = font.render("Choose a player to give 2 of your points to:", True, text_color)
+            display.blit(main_text, main_text_position)
+
+            for i, (_, name) in enumerate(other_players):
+                option_text = font.render(f"{i + 1} ({name})", True, text_color)
+                display.blit(option_text, option_positions[i])
+            pygame.display.update()
+
+    if chosen_player is not None:
+        player_scores[player_index] -= 2
+        player_scores[chosen_player] += 2
 
 
 def take_1_point(player_index):
-    pass
+    global player_scores
+
+    other_players = [
+        (i, f"Player {i + 1}" if i < 2 else f"AI Player {i - 1}")
+        for i in range(len(player_scores))
+        if i != player_index
+    ]
+
+    if player_index >= 2:
+        chosen_player = random.choice(other_players)[0]
+    else:
+        main_text_position = (1300, 200)
+        option_positions = [(1300, 250 + i * 50) for i in range(len(other_players))]
+        text_color = Black
+        text_size = 36
+
+        prompt_displayed = True
+        chosen_player = None
+
+        while prompt_displayed:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    exit()
+
+                if event.type == pygame.KEYDOWN:
+                    if pygame.K_1 <= event.key <= pygame.K_1 + len(other_players) - 1:
+                        chosen_player = other_players[event.key - pygame.K_1][0]
+                        prompt_displayed = False
+
+            font = pygame.font.Font(None, text_size)
+            main_text = font.render("Choose a player to take 1  points from:", True, text_color)
+            display.blit(main_text, main_text_position)
+
+            for i, (_, name) in enumerate(other_players):
+                option_text = font.render(f"{i + 1} ({name})", True, text_color)
+                display.blit(option_text, option_positions[i])
+            pygame.display.update()
+
+    if chosen_player is not None:
+        player_scores[player_index] += 1
+        player_scores[chosen_player] -= 1
 
 
 def take_2_points(player_index):
-    pass
+    global player_scores
 
+    other_players = [
+        (i, f"Player {i + 1}" if i < 2 else f"AI Player {i - 1}")
+        for i in range(len(player_scores))
+        if i != player_index
+    ]
 
-def choose_path_start(player_index):
-    pass
+    if player_index >= 2:
+        chosen_player = random.choice(other_players)[0]
+    else:
+        main_text_position = (1300, 200)
+        option_positions = [(1300, 250 + i * 50) for i in range(len(other_players))]
+        text_color = Black
+        text_size = 36
 
+        prompt_displayed = True
+        chosen_player = None
+
+        while prompt_displayed:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    exit()
+
+                if event.type == pygame.KEYDOWN:
+                    if pygame.K_1 <= event.key <= pygame.K_1 + len(other_players) - 1:
+                        chosen_player = other_players[event.key - pygame.K_1][0]
+                        prompt_displayed = False
+
+            font = pygame.font.Font(None, text_size)
+            main_text = font.render("Choose a player to take 1  points from:", True, text_color)
+            display.blit(main_text, main_text_position)
+
+            for i, (_, name) in enumerate(other_players):
+                option_text = font.render(f"{i + 1} ({name})", True, text_color)
+                display.blit(option_text, option_positions[i])
+            pygame.display.update()
+
+    if chosen_player is not None:
+        player_scores[player_index] += 2
+        player_scores[chosen_player] -= 2
 
 def S(player_index):
     pass
 
 
 def N(player_index):
-    pass
+    global player_scores
+    player_scores = [0, 0, 0, 0]
 
 
 def Z(player_index):
@@ -310,7 +470,7 @@ path_3_b = [
     Cell(917, 723, 80, take_2_points, transparency=0),  # 3
     Cell(917, 801, 80, subtract_1_point, transparency=0),  # 4
     Cell(995, 801, 80, give_1_point, transparency=0),  # 5
-    Cell(1073, 801, 80, N, transparency=0),  # 5
+    Cell(1073, 801, 80, N, transparency=0),  # 6
     Cell(1151, 801, 80, take_1_point, transparency=0),  # 7
     Cell(1151, 723, 80, transparency=0),  # 8
     Cell(1151, 645, 80, give_1_point, transparency=0),  # 9
@@ -326,7 +486,7 @@ path_3_b = [
 
 cells = path_1 + path_1_a + path_1_b + path_2 + path_2_a + path_2_b + path_3 + path_3_a + path_3_b
 
-player_paths = [path_1, path_1, path_3, path_3]
+player_paths = [path_1, path_3, path_2, path_3]
 
 player_positions = [0 for _ in player_paths]
 
@@ -342,17 +502,16 @@ def move_player(player_index, steps):
         player_queues[player_index] = list(range(current_index + 1, new_index + 1))
     else:
 
-        remaining_steps = new_index - len(path) + 1
         player_positions[player_index] = len(path) - 1
         player_queues[player_index] = list(range(current_index + 1, len(path)))
 
         if (path == path_1 and player_positions[player_index] == 11) or \
-                (path == path_2 and player_positions[player_index] == 7) or \
-                (path == path_3 and player_positions[player_index] == 12):
-            handle_path_choice(player_index, remaining_steps=remaining_steps)
+           (path == path_2 and player_positions[player_index] == 7) or \
+           (path == path_3 and player_positions[player_index] == 12):
+            handle_path_choice(player_index)
 
 
-def handle_path_choice(player_index, remaining_steps=0):
+def handle_path_choice(player_index):
     global player_paths, player_positions
 
     current_path = player_paths[player_index]
@@ -360,31 +519,40 @@ def handle_path_choice(player_index, remaining_steps=0):
     prompt_displayed = True
 
     path_choices = {
-        "path_1": (path_1_a, path_1_b, "Choose your path:", "1 (Up)", "2 (Down)"),
-        "path_2": (path_2_a, path_2_b, "Choose your path:", "1 (Up)", "2 (Right)"),
-        "path_3": (path_3_a, path_3_b, "Choose your path:", "1 (Up)", "2 (Right)"),
+        "path_1": (path_1_a, path_1_b, None, "Choose your path:", "1 (Up)", "2 (Down)", None),
+        "path_2": (path_2_a, path_2_b, None, "Choose your path:", "1 (Up)", "2 (Right)", None),
+        "path_3": (path_3_a, path_3_b, None, "Choose your path:", "1 (Up)", "2 (Right)", None),
+        "path_1_a": (path_1, path_2, path_3, "Choose your path:", "1 (Path 1)", "2 (Path 2)", "3 (Path 3)"),
+        "path_1_b": (path_1, path_2, path_3, "Choose your path:", "1 (Path 1)", "2 (Path 2)", "3 (Path 3)"),
+        "path_2_a": (path_1, path_2, path_3, "Choose your path:", "1 (Path 1)", "2 (Path 2)", "3 (Path 3)"),
+        "path_2_b": (path_1, path_2, path_3, "Choose your path:", "1 (Path 1)", "2 (Path 2)", "3 (Path 3)"),
+        "path_3_a": (path_1, path_2, path_3, "Choose your path:", "1 (Path 1)", "2 (Path 2)", "3 (Path 3)"),
+        "path_3_b": (path_1, path_2, path_3, "Choose your path:", "1 (Path 1)", "2 (Path 2)", "3 (Path 3)"),
     }
 
     main_text_position = (1300, 200)
     option_1_position = (1300, 250)
     option_2_position = (1300, 300)
+    option_3_position = (1300, 350)
     text_color = Black
     text_size = 36
 
+    # Determine path_identifier
     path_identifier = None
-    if current_path == path_1:
-        path_identifier = "path_1"
-    elif current_path == path_2:
-        path_identifier = "path_2"
-    elif current_path == path_3:
-        path_identifier = "path_3"
+    if current_path in [path_1, path_2, path_3]:
+        path_identifier = "path_" + str([path_1, path_2, path_3].index(current_path) + 1)
+    elif current_path in [path_1_a, path_1_b, path_2_a, path_2_b, path_3_a, path_3_b]:
+        path_identifier = [path_1_a, path_1_b, path_2_a, path_2_b, path_3_a, path_3_b].index(current_path)
+        path_identifier = f"path_{(path_identifier // 2) + 1}_{'a' if path_identifier % 2 == 0 else 'b'}"
 
-    if path_identifier and path_identifier in path_choices:
-        path_a, path_b, main_prompt, option_1_text, option_2_text = path_choices[path_identifier]
+    # Display options and handle choices
+    if path_identifier in path_choices:
+        options = path_choices[path_identifier]
+        path_a, path_b, path_c, main_prompt, option_1_text, option_2_text, option_3_text = options
 
-        if player_index >= 2:
-            chosen_path = random.choice([path_a, path_b])
-        else:
+        if player_index >= 2:  # AI choice
+            chosen_path = random.choice([path for path in (path_a, path_b, path_c) if path])
+        else:  # Player choice
             while prompt_displayed:
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
@@ -398,7 +566,11 @@ def handle_path_choice(player_index, remaining_steps=0):
                         elif event.key == pygame.K_2:
                             chosen_path = path_b
                             prompt_displayed = False
+                        elif path_c and event.key == pygame.K_3:
+                            chosen_path = path_c
+                            prompt_displayed = False
 
+                # Render text
                 font = pygame.font.Font(None, text_size)
                 main_text = font.render(main_prompt, True, text_color)
                 option_1 = font.render(option_1_text, True, text_color)
@@ -407,6 +579,10 @@ def handle_path_choice(player_index, remaining_steps=0):
                 display.blit(main_text, main_text_position)
                 display.blit(option_1, option_1_position)
                 display.blit(option_2, option_2_position)
+                if path_c:
+                    option_3 = font.render(option_3_text, True, text_color)
+                    display.blit(option_3, option_3_position)
+
                 pygame.display.flip()
 
     if chosen_path:
@@ -420,14 +596,6 @@ def ai_turn(ai_index):
     last_roll = dice
     move_player(ai_index, dice)
 
-
-def ai_choose_path(player_index, remaining_steps):
-    global player_paths
-
-    chosen_path = random.choice([path_1_a, path_1_b])
-    player_paths[player_index] += chosen_path
-
-    move_player(player_index, remaining_steps)
 
 def draw_dice(x, y, roll):
     size = 50
@@ -485,43 +653,14 @@ def gameboard1_screen():
                 if event.type == pygame.QUIT:
                     running = False
                 elif event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_r:  # Restart the game
+                    if event.key == pygame.K_r:
                         gameboard1_screen()
                         return
-                    elif event.key == pygame.K_q:  # Quit the game
+                    elif event.key == pygame.K_q:
                         running = False
             continue
 
         display.blit(background_image, (0, 0))
-
-        for path in [path_1, path_1_a, path_1_b, path_2, path_2_a, path_2_b, path_3, path_3_a, path_3_b]:
-            for i, cell in enumerate(path):
-                cell.draw(display, i)
-
-        current_time = pygame.time.get_ticks()
-        for i in range(4):
-            if player_queues[i] and current_time - movement_timer[i] >= MOVEMENT_DELAY:
-                movement_timer[i] = current_time
-                player_positions[i] = player_queues[i].pop(0)
-
-                if not player_queues[i]:
-                    cells[player_positions[i]].on_land(i)
-
-                if i == turn and not player_queues[i]:
-                    pygame.time.wait(TURN_DELAY)
-                    turn = (turn + 1) % 4
-                    if turn == 0:
-                        turn_count += 1
-                        if turn_count > num_turns:
-                            winner_text = end_game()
-                            game_over = True
-
-        colors = [Blue, Red, Green, Orange]
-        for i, pos in enumerate(player_positions):
-            path = player_paths[i]
-            if pos < len(path):
-                cell = path[pos]
-                pygame.draw.circle(display, colors[i], (cell.x + cell.size // 2, cell.y + cell.size // 2), 20)
 
         card_width = 400
         card_height = 250
@@ -569,6 +708,38 @@ def gameboard1_screen():
             )
 
             display.blit(score_text, position)
+
+        current_time = pygame.time.get_ticks()
+        for i in range(4):
+            if player_queues[i] and current_time - movement_timer[i] >= MOVEMENT_DELAY:
+                movement_timer[i] = current_time
+
+                player_positions[i] = player_queues[i].pop(0)
+
+                if not player_queues[i]:
+                    current_path = player_paths[i]
+                    current_position = player_positions[i]
+
+                    if current_position < len(current_path):
+                        current_cell = current_path[current_position]
+                        current_cell.on_land(i)
+
+                if i == turn and not player_queues[i]:
+                    pygame.time.wait(TURN_DELAY)
+                    turn = (turn + 1) % 4
+                    if turn == 0:
+                        turn_count += 1
+                        if turn_count > num_turns:
+                            winner_text = end_game()
+                            game_over = True
+
+        colors = [Blue, Red, Green, Orange]
+        for i, pos in enumerate(player_positions):
+            path = player_paths[i]
+            if pos < len(path):
+                cell = path[pos]
+                pygame.draw.circle(display, colors[i], (cell.x + cell.size // 2, cell.y + cell.size // 2), 20)
+
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
