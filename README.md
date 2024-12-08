@@ -9,9 +9,9 @@
 * update Server_IP and Port to your desired IP address and desired port
 * Run full_main.py
 * Play
-** Enter your desired name in given prompt
-** Click the lobby you wish to join
+  * Enter your desired name in given prompt
+  * Click the lobby you wish to join
 * Settings
-** Controls - adjust master and music volume
+  * Controls - adjust master and music volume
 * Quit 
-** Closes Game
+  * Closes Game
