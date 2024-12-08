@@ -3,8 +3,9 @@
 * pygame
 * Internet connection
 * All game files
-# How to play
+# How to install and run
 ### This is an online only game(unless you run the files seperately)
+* Download all game files
 * Open constants.py
 * update Server_IP and Port to your desired IP address and desired port
 * Run full_main.py
