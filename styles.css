@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Global styling */
 body {
     font-family: 'Kanit', sans-serif;
     background-color: #f5f5dc; /* Board game style background */
@@ -11,6 +12,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header and image styling */
 header {
     position: relative;
 }
@@ -50,9 +52,13 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Navigation styling */
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center; /* Centers the navigation items */
+    align-items: center;
+    padding: 0;
 }
 
 nav ul li {
@@ -69,6 +75,23 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffd700; /* Golden hover effect */
+}
+
+/* Download button styling */
+nav ul li a.download-button {
+    background-color: #d2691e; /* Rich color for the Download button */
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a.download-button:hover {
+    background-color: #8b4513; /* Darker on hover for contrast */
+    color: #f5f5dc; /* Light text color for hover */
 }
 
 /* Intro section positioned at the bottom of the header */
@@ -94,6 +117,7 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
+/* Main content styling */
 main {
     padding: 50px 20px;
     max-width: 900px;
@@ -113,6 +137,7 @@ main {
     font-size: 1.2rem;
 }
 
+/* Footer styling */
 footer {
     background-color: #8b4513;
     color: #fff;
